@@ -139,7 +139,7 @@ layout: compress
     <div class="container">
       <div class="col-sm-3">
         <div class="fixed-condition">
-          <h1 class="author-name"><a href="/">{{ site.author }}</a></h1>
+          <h1 class="author-name">{{ site.author }}</h1>
           {% if site.about %}
           <div class="profile-about">{{ site.about }}</div>
           {% endif %}
@@ -154,7 +154,7 @@ layout: compress
               {% endfor %}
             </ul>
           </div>
-          <div class="search" id="js-search">
+          <!-- <div class="search" id="js-search">
             <input
               type="text"
               placeholder="(sitemap)~$ type to search"
@@ -162,7 +162,7 @@ layout: compress
               id="js-search__input"
             />
             <ul class="search__results" id="js-search__results"></ul>
-          </div>
+          </div> -->
           <hr />
           <ul class="sidebar-nav">
             <strong>Navigation</strong>
