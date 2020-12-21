@@ -1,16 +1,14 @@
 ---
 layout: post
-title:  "How can i accept and run user's code securely on my web app?"
-date:   2020-08-01 20:02:00 +0700
+title: "How can i accept and run user's code securely on my web app?"
+date: 2020-08-01 20:02:00 +0700
 categories: [python, django, security]
 ---
-
 
 I am working on a django based web app that takes python file as input which contains some function,
 then in backend i have some lists that are passed as parameters through the user's function,
 which will generate a single value output.
 The result generated will be used for some further computation.
-
 
 Here is how the function inside the user's file look like :
 
@@ -36,7 +34,6 @@ result = eval(f"{modulename}.{somefunctionname}(arguments)")
 
 Which is working absolutely fine. But i know this is not the secured approach.
 
-
 My question, Is there any other way through which i can run
 users file securely as the method that i am using is not secure ?
 I know the proposed solutions can't be full proof but what are the other ways
@@ -46,10 +43,9 @@ Or if possible can somebody tell me how can i simply sandbox this or any tutoria
 
 Any reference or resource will be helpful.
 
--------------------------
+---
 
 #### Answer
-
 
 It is an important question. In python sandboxing is not trivial.
 
@@ -86,8 +82,8 @@ exec(byte_code, {__builtins__ = safe_builtins})
 >>> Hello world, but secure
 ```
 
-Running with __builtins__ = safe_builtins disables the *dangerous* functions like open file, import or whatever.
-There are also other variations of __builtins__ and other options, take some time to read the docs, they are pretty good.
+Running with **builtins** = safe_builtins disables the _dangerous_ functions like open file, import or whatever.
+There are also other variations of **builtins** and other options, take some time to read the docs, they are pretty good.
 
 **EDIT:**
 
@@ -193,10 +189,9 @@ then execute it with different parameters.
 So all you have to do is to save the `byte_code` somewhere,
 then to call exec with a different set of `restricted_locals` each time.
 
-  [1]: https://docs.python.org/2/library/rexec.html
-  [2]: https://restrictedpython.readthedocs.io/en/latest/index.html
+[1]: https://docs.python.org/2/library/rexec.html
+[2]: https://restrictedpython.readthedocs.io/en/latest/index.html
 
-
-------------------
+---
 
 Original Issue: https://stackoverflow.com/q/63160370/6396981
