@@ -19,9 +19,9 @@ permalink: /about/
 - 워크가 라이프가 되는 삶을 꿈꿉니다.
 ```
 
-# ⚒ { Skills }
+# ⚒ Skills
 
----
+## :tools:
 
 - JAVA
 - Oracle
