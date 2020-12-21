@@ -7,7 +7,7 @@
 "image": "placeholder.jpg", <!-- img : 출력할 이미지. static폴더의 projects안에 이미지 넣을것.-->
 "url": "https://www.google.com", <!-- url: 프로젝트 경로 -->
 "date": "Jan 2014", <!--date: 날짜 -->
-"tags": ["Angular JS","API"] <!--tags: 사용한 기술스택.. 태그 -- >
+"tags": ["Angular JS","API"] <!--tags: 사용한 기술스택.. 여기 작성한 리스트들로 태그목록이 생긴다. -- >
 },
 {
 "name": "Cool project 2",
