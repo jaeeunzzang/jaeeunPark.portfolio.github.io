@@ -32,9 +32,7 @@ permalink: /about/
 - JavaScript
 - jQuery,JSP
 
-## 😀
-
-# Contact me at
+## 😀 Contact me at
 
 ---
 
