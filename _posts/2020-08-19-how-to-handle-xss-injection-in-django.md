@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "How to handle XSS Injection in Django?"
-date:   2020-08-19 10:10:15 +0700
+title: "How to handle XSS Injection in Django?"
+date: 2020-08-19 10:10:15 +0700
 categories: [python, django, security]
 ---
 
@@ -11,7 +11,7 @@ The `X-XSS-Protection header` is used to control the operation of the XSS filter
 
 To enable the XSS filter in the browser, and force it to always block suspected XSS attacks, you can pass the `X-XSS-Protection: 1; mode=block` header. SecurityMiddleware will do this for all responses if the `SECURE_BROWSER_XSS_FILTER` setting is `True`.
 
-----------------
+---
 
 The solution above can't handle the modified request body from attacker. So, to handle this case, I have two methods:
 
@@ -63,7 +63,6 @@ class XSSModelCleaner(object):
         return super().save(*args, **kwargs)
 ```
 
-
 #### 1. By using custom content/text replacer.
 
 And in this case, we have a different functionality. For example when the field is as `models.TextField` or `RichTextField`.
@@ -107,9 +106,7 @@ def xss_cleaner(content):
     return content
 ```
 
-
 **Don't want to save it in the models, only inside the `forms`?**, no worry just like this;
-
 
 ```python
 from siap_app.utils.cleaner import xss_cleaner
@@ -131,7 +128,6 @@ class PostForm(forms.ModelForm):
 ```
 
 or if you want speficif field.
-
 
 ```python
 class PostForm(forms.ModelForm):
