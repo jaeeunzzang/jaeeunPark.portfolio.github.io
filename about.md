@@ -4,8 +4,6 @@ title: About Jaeeun Park
 permalink: /about/
 ---
 
-### 저는
-
 > #### - 같이의 가치를 믿습니다<br>
 
 > 개인의 발전만이 아닌 공동체의 발전과 다양한 사람들과의 협업을 즐깁니다.<br>
