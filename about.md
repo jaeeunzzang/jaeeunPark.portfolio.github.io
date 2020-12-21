@@ -32,12 +32,12 @@ permalink: /about/
 - JavaScript
 - jQuery,JSP
 
-# 😀 Contact me at
+## 😀 # Contact me at
 
 ---
 
-✉️ Email qkrwodms0201@gmail.com
+✉️ Email : qkrwodms0201@gmail.com
 
-☎️ Phone +82 010-9489-4369
+☎️ Phone : +82 010-9489-4369
 
-⚙️ Github [github/jaeeunzzang](https://github.com/jaeeunzzang)
+⚙️ Github : [github/jaeeunzzang](https://github.com/jaeeunzzang)
