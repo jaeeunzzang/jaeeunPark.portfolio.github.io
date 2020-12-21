@@ -1,3 +1,5 @@
+#here is site
+
 title: Jaeeun Park
 description: JaeeunPark Portfolio
 author: Jaeeun Park
@@ -39,8 +41,6 @@ urls:
     url: /about/
   - text: My Projects
     url: /projects/
-  - text: XML Feed
-    url: /feed.xml
 
 url: "https://jaeeunzzang.github.io/"
 baseurl: ""
