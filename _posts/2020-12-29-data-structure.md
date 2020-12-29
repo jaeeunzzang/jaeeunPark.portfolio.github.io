@@ -11,10 +11,22 @@ categories: [algorithm, java, study]
 
 #### 종류
 
-- 배열
-- 큐
-- 스택
-- 리스트
-- 그래프
-- 트리
-- 집합
+- 배열(http://)
+- 큐(http://)
+- 스택(http://)
+- 리스트(http://)
+- 그래프(http://)
+- 트리(http://)
+- 집합(http://)
+
+#### DFS (깊이우선탐색법)
+
+(http://)
+
+#### BFS (너비우선탐색법)
+
+(http://)
+
+#### DYNAMIC PROGRAMMING (동적 계획법)
+
+(http://)
