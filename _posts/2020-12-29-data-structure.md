@@ -11,7 +11,7 @@ categories: [algorithm, java, study]
 
 #### 종류
 
-- 배열(https://jaeeunzzang.github.io/algorithm/java/study/2020/12/29/array.html)
+- [배열](https://jaeeunzzang.github.io/algorithm/java/study/2020/12/29/array.html)
 - 큐(http://)
 - 스택(http://)
 - 리스트(http://)
