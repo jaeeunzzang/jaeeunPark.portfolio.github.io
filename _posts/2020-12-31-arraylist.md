@@ -15,18 +15,48 @@ public class ArrayList {
     private int size = 0;
     private Object[] elementData = new Object[100];
 
-    public boolean addLast(Object element){
+    public boolean addLast(Object element){ //끝에 데이터 추가
         elementData[size] = element; //elementData[0]=10
         size++;
         return true;
     }
-    public boolean add(int index,Object element){
+    public boolean add(int index,Object element){ //중간에 데이터 추가
         for(int i=size-1;i>=index;i--){
         elementData[i+1]=elementData[i]; //elementData[3]=elementData[2]
         }
         elementData[index]=element;
         size++;
         return true;
+    }
+    public boolean addFirst(Object element){ //첫번째에 데이터 추가
+        return add(0,element);
+    }
+    public Object get(int index){ //데이터 조회
+        return elementData[index];
+    }
+    public String toString(){
+        String str="[";
+        for(int i=0;i<size;i++){
+            str+=elementData[i];
+            if(i<size-1){//size가 3이라면... i가 2일 때 까지만 쉼표를 붙인다.
+            str+=",";
+            }
+        }
+        return str+"]";
+    }
+    public int size(){ //배열 크기 반환
+        return size;
+    }
+    public int indexOf(Object element){ //검색
+        for(int i=0;i<size;i++){
+            if(element.equals(elementData[i])){
+                return i;
+            }
+        }
+            return -1; //없으면 -1 반환
+    }
+    public boolean remove(int index){
+
     }
 }
 ```
