@@ -56,20 +56,23 @@ public class ArrayList {
             return -1; //없으면 -1 반환
     }
     public boolean remove(int index){
-        elementData[index]="null";
+	        elementData[index]="null";
 
-        for int(i=index;i<size;i++){
-            elementData[i]=elementData[i+1];
-        }
-        size--;
-        return true;
-    }
-    public boolean removeFirst(){
-        return remove(0);
-    }
-    public boolean removeLast(){
-        elementData[size-1]="null";
-    }
+	        for (int i=index;i<size;i++){
+	            elementData[i]=elementData[i+1];
+	        }
+	        size--;
+	        return true;
+	    }
+
+	public boolean removeFirst() {
+		return remove(0);
+	}
+
+	public boolean removeLast() {
+		elementData[size - 1] = "null";
+		return true;
+	}
 }
 ```
 
