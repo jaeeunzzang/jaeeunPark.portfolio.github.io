@@ -14,6 +14,20 @@ categories: [algorithm, java, study]
 public class ArrayList {
     private int size = 0;
     private Object[] elementData = new Object[100];
+
+    public boolean addLast(Object element){
+        elementData[size] = element; //elementData[0]=10
+        size++;
+        return true;
+    }
+    public boolean add(int index,Object element){
+        for(int i=size-1;i>=index;i--){
+        elementData[i+1]=elementData[i]; //elementData[3]=elementData[2]
+        }
+        elementData[index]=element;
+        size++;
+        return true;
+    }
 }
 ```
 
@@ -21,5 +35,9 @@ public class ArrayList {
 public class Main {
     public static void main(String[] args) {
         ArrayList al = new ArrayList();
+        al.addLast(10);
+        al.addLast(20);
+        al.addLast(30);
+        al.add(1,15);
     }
 ```
