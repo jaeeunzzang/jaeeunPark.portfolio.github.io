@@ -15,9 +15,20 @@ public class ArrayList {
     private int size = 0;
     private Object[] elementData = new Object[100];
 
+    public void expandSize() { //배열 크기 넘어가면 자동으로 크기 늘려준당..
+		if (size >= elementData.length) {
+			Object[] elementData2 = new Object[size * 2];
+			for (int i = 0; i < elementData.length; i++) {
+				elementData2[i] = elementData[i];
+			}
+			this.elementData=elementData2;
+		}
+
+	}
     public boolean addLast(Object element){ //끝에 데이터 추가
         elementData[size] = element; //elementData[0]=10
         size++;
+        expandSize();
         return true;
     }
     public boolean add(int index,Object element){ //중간에 데이터 추가
@@ -26,6 +37,7 @@ public class ArrayList {
         }
         elementData[index]=element;
         size++;
+        expandSize();
         return true;
     }
     public boolean addFirst(Object element){ //첫번째에 데이터 추가
