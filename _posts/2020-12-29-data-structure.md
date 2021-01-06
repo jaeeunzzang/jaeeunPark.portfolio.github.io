@@ -12,9 +12,9 @@ categories: [algorithm, java, study]
 #### 종류
 
 - [배열](https://jaeeunzzang.github.io/algorithm/java/study/2020/12/29/array.html)
+- [리스트](https://jaeeunzzang.github.io/algorithm/java/study/2020/12/30/list.html)
 - 큐(http://)
 - 스택(http://)
-- [리스트](https://jaeeunzzang.github.io/algorithm/java/study/2020/12/30/list.html)
 - 그래프(http://)
 - 트리(http://)
 - 집합(http://)
