@@ -5,6 +5,11 @@ date: 2020-12-31 14:47:00 +0900
 categories: [algorithm, java, study]
 ---
 
+### ArrayList
+
+데이터를 빈번히 조회한다면 ArrayList가 효과적(인덱스 사용)<br>
+내부적으로 배열을 사용하기 때문에 데이터의 추가, 삭제연산을 할 때는 앞 뒤로 빈공간을 만들거나 없애야 하기 때문에 상대적으로 느리다.
+
 ### ArrayList 구현
 
 내장되어있는 배열리스트는 동적으로 크기를 할당.(CollectionFramework)<br>
