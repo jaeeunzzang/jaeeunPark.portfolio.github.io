@@ -76,6 +76,23 @@ class LinkedList {
             }
         }
     }
+	public Object remove(int idx){ //인덱스 위치 삭제
+        if(idx == 0){
+            return removeFirst();
+        }
+        Node tmp = Node(idx-1);
+        Node willDelete = tmp.next;
+        tmp.next = tmp.next.next;
+
+        Object data = willDelete.data;
+        if(willDelete == tail){
+            tail = tmp;
+        }
+        willDelete = null;
+        size--;
+
+        return data;
+    }
 }
 
 public class Vectorlist {
