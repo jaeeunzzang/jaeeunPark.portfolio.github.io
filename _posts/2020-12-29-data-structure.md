@@ -9,7 +9,7 @@ categories: [algorithm, java, study]
 
 큰 데이터를 효율적으로 관리하기 위함.<br>
 
-#### 종류
+### 종류
 
 #### 선형 자료구조
 

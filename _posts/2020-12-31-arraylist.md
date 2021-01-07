@@ -7,7 +7,7 @@ categories: [algorithm, java, study]
 
 ### ArrayList 구현
 
-내장되어있는 배열리스트는 동적으로 크기를 할당.<br>
+내장되어있는 배열리스트는 동적으로 크기를 할당.(CollectionFramework)<br>
 지정된 크기 이상의 데이터가 들어오면 배열의 크기\*2 해주고 데이터를 복사해서 넣는다.
 
 ```java
