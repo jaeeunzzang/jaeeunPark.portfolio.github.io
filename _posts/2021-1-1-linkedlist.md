@@ -13,7 +13,7 @@ categories: [algorithm, java, study]
 class LinkedList {
 	private Node head;
 	private Node tail;
-	private int size;
+	private int size=0;
 
 	static class Node {
 		private Object data;
@@ -31,15 +31,51 @@ class LinkedList {
 
 	public void addFirst(Object data) {// 처음 위치에 추가
 		Node newNode = new Node(data);
-//새로운 Node 들이 head Node로 지정해 주어야 한다. 기존의 head Node는 새로운 Node의 Next Node로 밀리게 된다
-		newNode.next = head;
-		head = newNode;
 
-		size++;
-		if (head.next == null) {
-			tail = head;
+		newNode.next = head;
+	//기존의 head Node는 새로운 Node의 Next Node로 밀리게 된다
+		head = newNode;
+	//새로운 Node를 head Node로 지정.
+
+		size++; //리스트 크기 증가
+		if (head.next == null) { //next노드가 없으면
+			tail = head; //head를 tail로 지정
 		}
 	}
+	public void addLast(Object data){ //마지막 위치에 추가
+		Node newNode=new Node(data);
+		if(size == 0){ //리스트에 처음 add하는거며는
+            addFirst(data);
+        }
+        else {
+            tail.next = newNode;
+			//tail Node의 다음순서에 새로운 Node를 추가.
+			//[기존노드][tail노드][새노드]
+            tail = newNode;
+			//tail노드를 새로운 노드로 변경
+			//[기존][새노드][tail노드]
+            size++;
+        }
+	}
+	 public void add(int index,Object data){ //인덱스 위치에 추가
+
+        if(index == 0){
+            addFirst(data);
+        }
+        else{
+            Node tmp_1 = Node(index-1);
+            Node tmp_2 = tmp_1.next;
+            Node newNode = new Node(data);
+
+            tmp_1.next = newNode;
+            newNode.next = tmp_2;
+            size++;
+
+            if(newNode.next == null){
+                tail = newNode;
+            }
+        }
+    }
 }
 
 public class Vectorlist {
