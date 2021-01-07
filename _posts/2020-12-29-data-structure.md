@@ -23,6 +23,8 @@ categories: [algorithm, java, study]
 - 그래프(http://)
 - 트리(http://)
 
+### 알고리즘
+
 #### DFS (깊이우선탐색법)
 
 (http://)
